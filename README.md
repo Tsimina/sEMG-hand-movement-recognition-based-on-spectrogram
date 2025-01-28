@@ -1,1 +1,1 @@
-# sEMG-hand-movement-recognition-based-on-spectrogram-
+# sEMG-hand-movement-recognition-based-on-spectrogram
