@@ -82,13 +82,13 @@ def extract_features():
 
                 # Împărțirea semnalului în ferestre
                 window_size = 4096 # Exemplu: 1 secundă la 1024 Hz
-                overlap = int(window_size * 0.6)  # 50% suprapunere
+                overlap = int(window_size * 0.6)  # 60% suprapunere
 
                 for start in range(0, len(signal) - window_size + 1, window_size - overlap):
                     window = signal[start:start + window_size]
 
                     # Filtrare semnal
-                    filtered_signal = apply_bandpass_filter(window, 10, 500, fs)
+                    filtered_signal = apply_bandpass_filter(window, 10, 500, fs) #merge si cu 10 
                     filtered_signal = notch_filter(filtered_signal, 50, fs)
 
                     # Calculul spectrogramelor
@@ -105,11 +105,11 @@ def extract_features():
 
 # Extrage caracteristicile și salvează-le
 features_df = extract_features()
-features_df.to_csv('../features_4.csv', index=False)
-print("Caracteristicile au fost salvate în features.csv")
+features_df.to_csv('../features_svm.csv', index=False)
+print("Caracteristicile au fost salvate în features_svm.csv")
 
 # Clasificare
-features_df = pd.read_csv('../features_4.csv')
+features_df = pd.read_csv('../features_svm.csv')
 X = features_df.drop(columns=["class", "channel"])
 y = features_df["class"]
 
