@@ -134,8 +134,13 @@ svm_model.fit(X_train, y_train)
 y_pred = svm_model.predict(X_test)
 
 print("\nAcuratețea pe setul de test:", accuracy_score(y_test, y_pred))
+
+report_str = classification_report(y_test, y_pred)
 print("\nRaport de clasificare:")
-print(classification_report(y_test, y_pred))
+print(report_str)
+
+with open("results_svm.txt", "w") as f:
+    f.write(report_str)
 
 # Matricea de confuzie
 conf_matrix = confusion_matrix(y_test, y_pred)

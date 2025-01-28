@@ -126,7 +126,6 @@ X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=42, stratify=y
 )
 
-
 knn_model = KNeighborsClassifier(n_neighbors=5)  # Ajustează n_neighbors după preferințe
 
 # Cross-validare simplă pe setul de antrenament
@@ -140,8 +139,13 @@ knn_model.fit(X_train, y_train)
 y_pred = knn_model.predict(X_test)
 
 print("\nAcuratețea pe setul de test:", accuracy_score(y_test, y_pred))
+
+report_str = classification_report(y_test, y_pred)
 print("\nRaport de clasificare:")
-print(classification_report(y_test, y_pred))
+print(report_str)
+
+with open("results_knn.txt", "w") as f:
+    f.write(report_str)
 
 # Matricea de confuzie
 conf_matrix = confusion_matrix(y_test, y_pred)
