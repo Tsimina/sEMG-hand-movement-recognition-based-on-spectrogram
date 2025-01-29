@@ -4,8 +4,19 @@ This repository contains a framework for recognizing hand movements using surfac
 
 ## Features
 
-sEMG Signal Preprocessing: Noise reduction and filtering for clean signal acquisition.
-Spectrogram-Based Feature Extraction: Application of overlapping windows to generate time-frequency representations.
-Machine Learning Pipeline: Feature selection and classification of hand movements.
-Reproducible Workflow: Code structured for easy experimentation and adaptation.
+* **sEMG Signal Preprocessing**: Noise reduction and filtering for clean signal acquisition.
+* **Spectrogram-Based Feature Extraction**: Application of overlapping windows to generate time-frequency representations.
+* **Machine Learning Pipeline**: Feature selection and classification of hand movements.
+* **Reproducible Workflow**: Code structured for easy experimentation and adaptation.
+
+## Datset 
+
+
+
+## Requirments 
+
+* Python 3.x
+* Libraries: NumPy, SciPy, Matplotlib 
+
+
 
