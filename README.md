@@ -9,8 +9,9 @@ This repository contains a framework for recognizing hand movements using surfac
 * **Machine Learning Pipeline**: Feature selection and classification of hand movements.
 * **Reproducible Workflow**: Code structured for easy experimentation and adaptation.
 
-## Datset 
+## Dataset 
 
+The dataset used for feature extraction is located in the **Hand** directory. This folder is structured into three separate subdirectories, each corresponding to a different hand movement performed.
 
 
 ## Requirments 
