@@ -19,5 +19,16 @@ The dataset used for feature extraction is located in the **Hand** directory. Th
 * Python 3.x
 * Libraries: NumPy, SciPy, Matplotlib 
 
+## Usage 
+
+Clone the repository:
+
+'git clone https://github.com/Tsimina/sEMG-hand-movement-recognition-based-on-spectrogram.git'
+
+> Everytime you run the scripts a '.csv' file containing all the relevant classification fetures will be generated.
+
+
+
+
 
 
