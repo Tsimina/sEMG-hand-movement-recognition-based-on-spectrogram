@@ -25,7 +25,7 @@ Clone the repository:
 
 'git clone https://github.com/Tsimina/sEMG-hand-movement-recognition-based-on-spectrogram.git'
 
-> Everytime you run the scripts a '.csv' file containing all the relevant classification fetures will be generated.
+> Every time you run the scripts, a .csv file containing all the relevant classification features will be generated.
 
 
 
